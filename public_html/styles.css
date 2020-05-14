@@ -1,23 +1,23 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
+    This is an example of an external CSS sheet (file) which webpages can be
+    linked to an then all rules on this sheet are applied.
+    
     Created on : 14-May-2020, 1:41:29 PM
     Author     : Lawrence Wachs
 */
 
 span 
-{
-        
-    color: rgb(255,255,255);
-    
+{        
+    color: rgb(255,255,255);    
 }
 
 body
+{    
+    background-color:   blue;    
+}
+
+hr
 {
-    
+    height: 3mm;
     background-color:   blue;
-    
 }
