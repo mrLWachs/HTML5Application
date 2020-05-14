@@ -1,86 +1,94 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
+<!-- This is how you do a comment in HTML -->
+
+<!-- This is the project I demonstrated in class on using HTML, XHTML, HTML5 
+code along with an introduction to CSS and JavaScript coding. -->
+
+<!-- This is the opening HTML tag with encompasses the entire webpage -->
 <html>
+    
+    <!-- The header section tag (this is the 'unseen' part of the page)-->
     <head>
+        
+        <!-- The title at the top of the web browser -->
         <title>TODO supply a title</title>
+        
+        <!-- Meta tags provide information to browsers -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <!-- linked CSS to a separate style sheet -->
+        <!-- Linked CSS to a separate style sheet -->
         <link rel="stylesheet" type="text/css" href="styles.css" />
-        
-        
-        <!-- embedded CSS -->
+                
+        <!-- Embedded CSS to effect this entire page -->
         <style type="text/css">
         
-            div {
-                
+            /* comments in CSS code sections can work like other programming 
+               languages like Java and C# */
+            
+            div {                
                 font-family    :   Tahoma   ;
-                font-size      :   10pt     ;
-                
+                font-size      :   20pt     ;                
             }
             
             body {
-                background-color: rgb(0,255,0);
+                background-color: rgb(0,255,255);
             }
             
             span {
-                font-weight: bolder ;
+                font-weight: bolder;
             }
             
         </style>
         
         <!-- script tag switches to JavaScript -->
-        <script type="text/JavaScript">
+        <script>
             
-            function message(var text) {            
-                alert("Hello wOrld! " + text);            
+            // Also comments in JavaScript can work like other programming 
+            // languages like Java and C#
+            
+            
+            // This is a method in JavaScript with an "alert" which operates
+            // like a JOtionPage or MessageBox dialog
+            
+            function message() {            
+                alert("Hello World!");            
             }
             
         </script>
-        
-        
-        
     </head>
-    
-    
-    <!-- the "body" is the part the user sees affected by the header -->
+        
+    <!-- The "body" is the part the user sees and is affected by the header -->
     <body>
         
-        <div>more text...</div>
+        <!-- -->
+        <div>A Title for this Web page Demonstration</div>
         
         <!-- inline CSS example -->
+        <div style="             
+             /* Inline css goes right inside a style attribute for a HTML tag */             
+             font-family    :   Arial           ;
+             font-size      :   10pt            ;
+             color          :   rgb(0,0,255)   ;
+             letter-spacing :   -0.3mm          ;
+             word-spacing   :   10mm            ;             
+             "><font face="Times New Roman">Welcome</font> to some web content
+        </div>
         
-        <div style="
-             
-             /* inline css goes here */
-             
-             font-family    :   Arial   ;
-             font-size      :   20pt    ;
-             
-             /*
-             color          :   rgb(15,98,36);
-             letter-spacing :   -2.5mm  ;
-             word-spacing   :   10mm;
-             */
-             
-             "><font face="Times New Roman">My</font> web content</div>
-        
-             
+        <!-- The horizontal rule HTML tag is "self closing" -->     
         <hr />
         
+        <!-- The div tag is a "divider" for HTML content -->
+        <div>Another Title for the next section...</div>
         
-        <div>Title</div>
-        
-        <p>Put <span>some</span> text.</p>
+        <!-- The paragraph tag and the span tag does not add line breaks -->
+        <p>Here we have some <span>text</span> which is inside a paragraph.</p>
         
         <hr />
         
-        <button type="button" onclick="message('Hi');"> CLICK </button>
-        
-    </body>
+        <!-- The button calls the JavaScript method -->
+        <button type="button" onclick="message();"> CLICK ME </button>
+          
+    </body>  
 </html>
