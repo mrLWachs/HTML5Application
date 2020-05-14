@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- linked CSS to a separate style sheet -->
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        
+        
+        <!-- embedded CSS -->
+        <style type="text/css">
+        
+            div {
+                
+                font-family    :   Tahoma   ;
+                font-size      :   10pt     ;
+                
+            }
+            
+            body {
+                background-color: rgb(0,255,0);
+            }
+            
+            span {
+                font-weight: bolder ;
+            }
+            
+        </style>
+        
+        <!-- script tag switches to JavaScript -->
+        <script type="text/JavaScript">
+            
+            function message(var text) {            
+                alert("Hello wOrld! " + text);            
+            }
+            
+        </script>
+        
+        
+        
+    </head>
+    
+    
+    <!-- the "body" is the part the user sees affected by the header -->
+    <body>
+        
+        <div>more text...</div>
+        
+        <!-- inline CSS example -->
+        
+        <div style="
+             
+             /* inline css goes here */
+             
+             font-family    :   Arial   ;
+             font-size      :   20pt    ;
+             
+             /*
+             color          :   rgb(15,98,36);
+             letter-spacing :   -2.5mm  ;
+             word-spacing   :   10mm;
+             */
+             
+             "><font face="Times New Roman">My</font> web content</div>
+        
+             
+        <hr />
+        
+        
+        <div>Title</div>
+        
+        <p>Put <span>some</span> text.</p>
+        
+        <hr />
+        
+        <button type="button" onclick="message('Hi');"> CLICK </button>
+        
+    </body>
+</html>
